@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.drag-wrapper {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 300px;
+    gap: 50px;
+    list-style-type: none;
+  }
+  .item {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pacman {
+    width: 250px;
+    height: 250px;
+    border-radius: 300px;
+    background-color: red;
+    cursor:col-resize;
+  }
+  .hide {
+    display: none;
+  }
+  .hovered {
+    background-color: red;
+  }
